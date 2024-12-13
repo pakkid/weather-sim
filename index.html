@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Visualizer</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <canvas id="weatherCanvas" width="800" height="600"></canvas>
+    <div class="controls">
+        <label for="weatherType">Weather Type:</label>
+        <select id="weatherType">
+            <option value="rain">Rain</option>
+            <option value="snow">Snow</option>
+            <option value="wind">Wind</option>
+            <option value="clouds">Clouds</option>
+            <option value="thunderstorm">Thunderstorm</option>
+            <option value="fog">Fog</option>
+        </select>
+        <label for="intensity">Intensity:</label>
+        <input type="range" id="intensity" min="1" max="10" value="5">
+    </div>
+    <script src="static/app.js"></script>
+</body>
+</html>
